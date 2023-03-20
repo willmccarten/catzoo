@@ -1,19 +1,8 @@
 //this will be the landing page
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './App.css';
-import catlogo from './assets/catlogo.png';
-import Loader from './Loader';
+import '../App.css';
+import catlogo from '../assets/catlogo.png';
 
-//function to render the router page
-function setToLoader(){
-  ReactDOM.render(
-    <React.StrictMode>
-      <Loader />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-}
 
 
 function App() {
@@ -27,7 +16,7 @@ function App() {
         </p>
 
         <div>
-          <button onClick={setToLoader}>Enter</button>
+          
           
         </div>
 

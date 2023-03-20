@@ -2,7 +2,7 @@
 import './index.css';
 import './App.css';
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/navbar';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Home from './pages/home';
@@ -10,8 +10,8 @@ import Home from './pages/home';
 //Swapped login load for the original login from App.js because they are the same thing
 //import Login from './pages/login';
 
-import HomeA from './pages/application A/homeA';
-import HomeB from './pages/application B/homeB';
+import HomeA from './pages/applicationA/homeA';
+import HomeB from './pages/applicationB/homeB';
 
 
 
@@ -35,4 +35,4 @@ function Loader() {
     );
 }
 
-export default Example;
+export default Loader;

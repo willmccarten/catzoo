@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, NavLink, NavMenu }
-    from "./NavbarElements";
+    from "./navbarElements";
 import ReactDOM from 'react-dom';
 import App from '../../App.jsx';
 
@@ -13,11 +13,11 @@ const Navbar = () => {
                     <NavLink to="/home" activeStyle>
                         Home
                     </NavLink>
-                    <NavLink to="/faq" activeStyle>
-                        FAQ
+                    <NavLink to="/homeA" activeStyle>
+                        App A
                     </NavLink>
-                    <NavLink to="/classes" activeStyle>
-                        Classes
+                    <NavLink to="/homeB" activeStyle>
+                        App B
                     </NavLink>
                 </NavMenu>
             </Nav>

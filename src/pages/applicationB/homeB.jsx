@@ -7,3 +7,5 @@ const homeB = () => {
         </div>
     );
 }
+
+export default homeB;
