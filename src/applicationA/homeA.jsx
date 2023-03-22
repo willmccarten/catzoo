@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../App.jsx';
 import HouseBiome from './houseBiome.jsx';
+import './homeA.css'
 
 
 //function to render the home page
@@ -27,34 +28,40 @@ function setToCity(){
 
 function homeA() {
     return (
-        <div className="App">
+                  
+        <div className="homeA_splash">
+            <div>
+                    <button onClick={setToHome}>Home</button>
+            </div>
+
+            <h2>
+                Welcome to Cat Zoo Application A!
+            </h2>
+
+
+            <h4>Click a biome to explore the cats that live there!</h4>
             
-            <header className="App-header">
-                <div>
-                        <button onClick={setToHome}>Home</button>
+            <div className='map_splash'>
+                <div className='map'>
+                    <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/57267519/original/c29150cf2ec22629122e72ed8a02087a996ea2e3/draw-your-fantasy-map.png" classname="map" alt="map" />
                 </div>
-
-                <h2>
-                    Welcome to Cat Zoo Application A!
-                </h2>
-
-                <h4>Click a biome to explore the cats that live there!</h4>
+                <div className='mountains'>
+                    <img src="https://i.pinimg.com/originals/6a/53/94/6a5394b1e9ae8952026ceb38dc9d87f5.png" classname="mountains" alt="mountain" />
+                </div>
                 
-                <div className='map_splash'>
-                    <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/57267519/original/c29150cf2ec22629122e72ed8a02087a996ea2e3/draw-your-fantasy-map.png" alt="map" />
-                    <img src="https://i.pinimg.com/originals/6a/53/94/6a5394b1e9ae8952026ceb38dc9d87f5.png" alt="mountain" />
-                </div>
+            </div>
 
-                <div>
-                    <button onClick={setToCity}>House/City</button>
-                    <button onClick={setToHome}>Savanna</button>
-                    <button onClick={setToHome}>Jungle</button>
-                    <button onClick={setToHome}>Mountain</button>
-                    <button onClick={setToHome}>Misc</button>
-                </div>
+            <div>
+                <button onClick={setToCity}>House/City</button>
+                <button onClick={setToHome}>Savanna</button>
+                <button onClick={setToHome}>Jungle</button>
+                <button onClick={setToHome}>Mountain</button>
+                <button onClick={setToHome}>Misc</button>
 
-            </header>
+            </div>
+
         </div>
+        
     );
 }
 

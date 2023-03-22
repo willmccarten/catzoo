@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../App.jsx';
 import HomeA from './homeA.jsx';
+import './biome.css';
 
 //function to render the home page
 function setToHome(){
@@ -38,8 +39,7 @@ const houseBiome = () => {
             <h2>Explore the cats it has to offer!</h2>
 
             <div className='biome_cats_splash'>
-                <h5>This div will contain the cat cards. Each card is in a div</h5>
-
+                
                 <div className='cat_species'>
                     <div className='cat_pic_container'>
                         <img src="https://www.pets4homes.co.uk/images/articles/2554/large/what-is-the-scottish-fold-cat-5c1b2e1a5b5a5.jpg" alt="Scottish Fold" />

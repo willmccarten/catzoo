@@ -1,0 +1,71 @@
+/* styles for the header bar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  /* styles for the biome splash div */
+  .biome_splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  /* styles for the biome_cats_splash div */
+  .biome_cats_splash {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  /* styles for the cat_species div */
+  .cat_species {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* styles for the cat_pic_container div */
+  .cat_pic_container {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* styles for the cat image */
+  .cat_pic_container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* styles for the cat title */
+  .cat_species h3 {
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  
