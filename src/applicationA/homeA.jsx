@@ -39,6 +39,12 @@ function homeA() {
                 </h2>
 
                 <h4>Click a biome to explore the cats that live there!</h4>
+                
+                <div className='map_splash'>
+                    <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/57267519/original/c29150cf2ec22629122e72ed8a02087a996ea2e3/draw-your-fantasy-map.png" alt="map" />
+                    <img src="https://i.pinimg.com/originals/6a/53/94/6a5394b1e9ae8952026ceb38dc9d87f5.png" alt="mountain" />
+                </div>
+
                 <div>
                     <button onClick={setToCity}>House/City</button>
                     <button onClick={setToHome}>Savanna</button>
@@ -46,7 +52,7 @@ function homeA() {
                     <button onClick={setToHome}>Mountain</button>
                     <button onClick={setToHome}>Misc</button>
                 </div>
-                
+
             </header>
         </div>
     );

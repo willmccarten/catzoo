@@ -1,0 +1,26 @@
+
+.map_splash img {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.map {
+    width: 25%;
+    height: 25%;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.mountain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
