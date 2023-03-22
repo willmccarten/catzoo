@@ -7,3 +7,5 @@ const scottishFold = () => {
         </div>
     );
 }
+
+export default scottishFold;
