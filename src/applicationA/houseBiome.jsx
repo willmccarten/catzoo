@@ -2,13 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../App.jsx';
 import HomeA from './homeA.jsx';
+import ScottishFold from '../cat species/scottishFold.jsx';
 import './biome.css';
+import bengal from '../assets/bengal.jpg';
+import scottishfold from '../assets/scottishfold.png';
+import americanshorthair from '../assets/americanshorthair.jpg';
 
 //function to render the home page
 function setToHome(){
     ReactDOM.render(
         <React.StrictMode>
             <App />
+        </React.StrictMode>,
+        document.getElementById('root')
+    );
+}
+
+//function to render the Scottish Fold page
+function setToScottishFold(){
+    ReactDOM.render(
+        <React.StrictMode>
+            <ScottishFold />
         </React.StrictMode>,
         document.getElementById('root')
     );
@@ -23,7 +37,6 @@ function setToA(){
         document.getElementById('root')
     );
 }
-
 
 const houseBiome = () => {
     return (
@@ -42,23 +55,23 @@ const houseBiome = () => {
                 
                 <div className='cat_species'>
                     <div className='cat_pic_container'>
-                        <img src="https://www.pets4homes.co.uk/images/articles/2554/large/what-is-the-scottish-fold-cat-5c1b2e1a5b5a5.jpg" alt="Scottish Fold" />
+                        <img src={scottishfold} onClick={setToScottishFold} alt="Scottish Fold" />
                     </div>
                     <h3>Scottish Fold</h3>
                 </div>
 
                 <div className='cat_species'>
                     <div className='cat_pic_container'>
-                        <img src="https://www.pets4homes.co.uk/images/articles/2554/large/what-is-the-scottish-fold-cat-5c1b2e1a5b5a5.jpg" alt="Scottish Fold" />
+                        <img src={bengal} alt="Scottish Fold" />
                     </div>
-                    <h3>Scottish Fold</h3>
+                    <h3>Bengal Cat</h3>
                 </div>
 
                 <div className='cat_species'>
                     <div className='cat_pic_container'>
-                        <img src="https://www.pets4homes.co.uk/images/articles/2554/large/what-is-the-scottish-fold-cat-5c1b2e1a5b5a5.jpg" alt="Scottish Fold" />
+                        <img src={americanshorthair} alt="American Shorthair" />
                     </div>
-                    <h3>Scottish Fold</h3>
+                    <h3>Shorthair</h3>
                 </div>
             </div>
         </div>
