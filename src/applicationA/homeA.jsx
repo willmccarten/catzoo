@@ -1,4 +1,19 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '../App.jsx';
+
+
+//function to render the home page
+function setToHome(){
+    ReactDOM.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+      document.getElementById('root')
+    );
+}
+
+
 
 const homeA = () => {
     return (
@@ -9,7 +24,7 @@ const homeA = () => {
                 </p>
 
                 <div>
-                
+                    <button onClick={setToHome}>Home</button>
                 
                 </div>
 

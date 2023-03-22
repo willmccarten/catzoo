@@ -1,3 +1,8 @@
+
+//I dont think i want this way anymore...gonna keep it but pretty much make it irrelevant...might get rid of it later alltogether
+
+
+
 //this will just be to load in the routes
 import './index.css';
 import './App.css';
@@ -10,8 +15,8 @@ import Home from './pages/home';
 //Swapped login load for the original login from App.js because they are the same thing
 //import Login from './pages/login';
 
-import HomeA from './pages/applicationA/homeA';
-import HomeB from './pages/applicationB/homeB';
+import HomeA from './applicationA/homeA';
+import HomeB from './applicationB/homeB';
 
 
 
