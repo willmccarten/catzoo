@@ -27,9 +27,7 @@ const homeB = () => {
                 
                 </div>
 
-                <a className="App-link" href="https://github.com/willmccarten/catzoo" target="_blank" rel="noopener noreferrer">
-                    Github
-                </a>
+            
             
             </header>
         </div>

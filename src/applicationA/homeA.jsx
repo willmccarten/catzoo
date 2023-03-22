@@ -46,13 +46,7 @@ function homeA() {
                     <button onClick={setToHome}>Mountain</button>
                     <button onClick={setToHome}>Misc</button>
                 </div>
-
-
-
-                <a className="App-link" href="https://github.com/willmccarten/catzoo" target="_blank" rel="noopener noreferrer">
-                    Github
-                </a>
-
+                
             </header>
         </div>
     );
