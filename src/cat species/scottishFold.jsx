@@ -38,18 +38,18 @@ function setToBiome(){
 
 const scottishFold = () => {
     return (
-                
-        <div className='biome_splash'>
+               
+        <div className='species_splash'>
 
             <div className="header">
                 <button onClick={setToHome}>Home</button>
                 <button onClick={setToA}>Map</button>
                 <button onClick={setToBiome}>Back</button>
-            </div>
+            </div> 
 
             <div className='species_cats_splash'>
 
-                <div className='cat_pic_container'>
+                <div className='cat_pic'>
                     <img src={scottishfold} alt="Scottish Fold" />
                 </div>
 

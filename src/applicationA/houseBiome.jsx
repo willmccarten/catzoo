@@ -71,7 +71,7 @@ const houseBiome = () => {
                     <div className='cat_pic_container'>
                         <img src={americanshorthair} alt="American Shorthair" />
                     </div>
-                    <h3>Shorthair</h3>
+                    <h3>American Shorthair</h3>
                 </div>
             </div>
         </div>
