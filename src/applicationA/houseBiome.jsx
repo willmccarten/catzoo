@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../App.jsx';
-import HomeA from './homeA.jsx';
+import HomeA from './HomeA.jsx';
 import ScottishFold from '../cat species/scottishFold.jsx';
 import './biome.css';
 import bengal from '../assets/bengal.jpg';
