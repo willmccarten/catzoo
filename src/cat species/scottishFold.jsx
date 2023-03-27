@@ -47,10 +47,9 @@ const scottishFold = () => {
        
         <div className='species_splash'>
             <Box  justifyContent="center" display='flex' mb={'10px'}>
-                <BackButton/>
             </Box>
             <div className='species_cats_splash'>
-                
+
                 <div className='cat_pic'>
                     <img src={scottishfold} alt="Scottish Fold" />
                 </div>
