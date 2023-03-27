@@ -7,6 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'FredokaBold';
+  font-weight:700;
+  src: local('FredokaBold'), url('./fonts/Fredoka/Fredoka-Bold.ttf') format('truetype');
+ }
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

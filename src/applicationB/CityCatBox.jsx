@@ -1,10 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from '../App.jsx';
-import HomeA from './HomeA.jsx';
 import { useNavigate } from 'react-router-dom';
-import ScottishFold from '../cat species/scottishFold.jsx';
-import './biome.css';
+import '../applicationA/biome.css';
 import bengal from '../assets/bengal.jpg';
 import scottishfold from '../assets/scottishfold.png';
 import americanshorthair from '../assets/americanshorthair.jpg';
@@ -14,47 +10,15 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-//function to render the home page
-function setToHome(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
-
-
-//function to render the App A's home page
-function setToA(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <HomeA />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
-
-
-const MountainBiome = () => {
+const CityCatBox = () => {
     const navigate = useNavigate();
 
     const setToScottishFold = () => {
         navigate('/city-cats/scottish-fold');
     }
     
-        //function to render the home page
-    const handleHomeClick = () => {
-        navigate('/');
-    };
-    
     return (
         <>
-        <HeaderWithMap/>
-        <div className='biome_splash' style={{height: 'calc(88vh + 4px)'}}>
-            <h1>Welcome to the Mountain!</h1>
-            <h2>Explore the cats it has to offer!</h2>
-
             <div className='biome_cats_splash'>
                 <Stack direction="column">
                     <Stack direction="row">
@@ -104,9 +68,8 @@ const MountainBiome = () => {
                     </Stack>
                 </Stack>
             </div>
-        </div>
         </>
     );
 }
 
-export default MountainBiome;
+export default CityCatBox;

@@ -8,12 +8,9 @@
 }
 
 .App-header {
-  background-color: #ffde96fb;
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #f0c199;
+  min-height: 10vh;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -21,6 +18,21 @@
 .App-link {
   color: #61dafb;
 }
+
+.fredoka {
+  font-family: FredokaBold;
+}
+.icons{
+  transform: Scale(1.5);
+  color: black
+}
+
+.icons2{
+  transform: Scale(2.0);
+  margin-bottom: 5px;
+  color: black
+}
+
 
 @keyframes App-logo-spin {
   from {

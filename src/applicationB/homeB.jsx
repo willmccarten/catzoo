@@ -1,32 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from '../App.jsx';
-import {BsFillHouseFill} from 'react-icons/bs';
-import './homeB.css'
+import Dropdown from '../Dropdown';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import Header from '../Header';
+import CityCatBox from './CityCatBox';
 
-//function to render the home page
-function setToHome(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
+const HomeB = () => {
+  return (
+    <>
+    <Header/>
+    <Box display='flex' justifyContent="center" sx={{ bgcolor: '#fbf4e2', pt: 8, pb: 6,}} minHeight='calc(69vh)' mt={0}>
+        <Container align="center">
+        <Stack direction="column" spacing={4} alignItems="center" justifyContent="center">
+            <Dropdown className="fredoka" title="CITY CATS" element={<CityCatBox/>} />
+            <Dropdown title="Dropdown 2" element={<CityCatBox/>}/>
+        </Stack>
+        </Container>
+    </Box>
+    </>
+  );
+};
 
-
-
-const homeB = () => {
-    return (
-            <header id="App-header">
-                <a href="homeB.css" class="logo"><BsFillHouseFill/></a>
-                <ul>
-                    <li><a href="App.jsx">Home</a></li>
-                    
-                </ul>
-                <div class="toggle" onclick="toggle()"></div>
-            </header>
-    );
-}
-
-export default homeB;
+export default HomeB;

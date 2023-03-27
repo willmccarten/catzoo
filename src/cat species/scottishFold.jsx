@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../App.jsx';
 import HomeA from '../applicationA/HomeA.jsx';
-import HouseBiome from '../applicationA/houseBiome.jsx';
+import HouseBiome from '../applicationA/HouseBiome.jsx';
 import './species.css';
 import scottishfold from '../assets/scottishfold.png';
+import Header from '../HeaderWithMap';
+import BackButton from './BackButton';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 //function to render the home page
 function setToHome(){
@@ -38,17 +42,15 @@ function setToBiome(){
 
 const scottishFold = () => {
     return (
-               
+        <>
+        <Header/>
+       
         <div className='species_splash'>
-
-            <div className="header">
-                <button onClick={setToHome}>Home</button>
-                <button onClick={setToA}>Map</button>
-                <button onClick={setToBiome}>Back</button>
-            </div> 
-
+            <Box  justifyContent="center" display='flex' mb={'10px'}>
+                <BackButton/>
+            </Box>
             <div className='species_cats_splash'>
-
+                
                 <div className='cat_pic'>
                     <img src={scottishfold} alt="Scottish Fold" />
                 </div>
@@ -68,6 +70,7 @@ const scottishFold = () => {
                 
             </div>
         </div>
+        </> 
     );
 }
 
