@@ -26,15 +26,16 @@ const bengal = () => {
                 </div>
 
                 <div classname='cat_info'>
-                    <h1>American Shorthair</h1>
-                    <h4>Origin: United States</h4>
-                    <h4>Weight: 7-15 lbs</h4>
-                    <h4>Height: 9-11 inches</h4>
-                    <h4>Life Span: 15-20 years</h4>
+                    <h1>Bengal</h1>
+                    <h4>Origin: Asia</h4>
+                    <h4>Weight: 8-15 lbs</h4>
+                    <h4>Height: 10-16 inches</h4>
+                    <h4>Life Span: 12-15 years</h4>
                     <h4>Temperament: Friendly, Intelligent, Playful, Affectionate</h4>
                     <h4>Coat: Short, Soft, and Silky</h4>
-                    <h4>Colors: White, Black, Blue, Cream, Chocolate, Lilac, Red, and Tortoiseshell</h4>
-                    <h4>Pattern: Solid, Tabby, and Tortoiseshell</h4>
+                    <h4>Colors: Brown, Black, and White</h4>
+                    <h4>Pattern: Spotted, Marbled, and Rosetted</h4>
+                    
                     
                 </div>
                 

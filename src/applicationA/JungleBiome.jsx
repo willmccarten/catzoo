@@ -5,9 +5,15 @@ import HomeA from './HomeA.jsx';
 import { useNavigate } from 'react-router-dom';
 import ScottishFold from '../cat species/scottishFold.jsx';
 import './biome.css';
+
 import bengal from '../assets/bengal.jpg';
 import scottishfold from '../assets/scottishfold.png';
 import americanshorthair from '../assets/americanshorthair.jpg';
+
+import jaguar from '../assets/catpics/Jaguar/Jaguar3.png';
+import ocelot from '../assets/catpics/Ocelot/Ocelot3.png';
+import jungleCat from '../assets/Jungle-cat.jpg'
+
 import HeaderWithMap from '../HeaderWithMap';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
@@ -18,9 +24,14 @@ import Container from '@mui/material/Container';
 const JungleBiome = () => {
     const navigate = useNavigate();
 
-    const setToScottishFold = () => {
-        navigate('/city-cats/scottish-fold');
+    const setToJaguar = () => {
+        navigate('/jungle-cats/jaguar');
     }
+
+    const setToOcelot = () => {
+        navigate('/jungle-cats/ocelot');
+    }
+
     
         //function to render the home page
     const handleHomeClick = () => {
@@ -39,23 +50,23 @@ const JungleBiome = () => {
                     <Stack direction="row">
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={scottishfold} onClick={setToScottishFold} alt="Scottish Fold" />
+                                <img src={jaguar} onClick={setToJaguar} alt="Jaguar" />
                             </div>
-                            <h3>Scottish Fold</h3>
+                            <h3>Jaguar</h3>
                         </div>
 
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={bengal} alt="Scottish Fold" />
+                                <img src={ocelot} onClick={setToOcelot} alt="Ocelot" />
                             </div>
-                            <h3>Bengal Cat</h3>
+                            <h3>Ocelot</h3>
                         </div>
 
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={americanshorthair} alt="American Shorthair" />
+                                <img src={jungleCat} alt="Jungle Cat" />
                             </div>
-                            <h3 mb={5}>American Shorthair</h3>
+                            <h3 mb={5}>Jungle Cat</h3>
                         </div>
                     </Stack>
                 </Stack>
