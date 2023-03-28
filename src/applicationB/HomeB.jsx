@@ -7,6 +7,10 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Header from '../Header';
 import CityCatBox from './CityCatBox';
+import SavannaCatBox from './SavannaCatBox';
+import JungleCatBox from './JungleCatBox';
+import MountainCatBox from './MountainCatBox';
+import MiscCatBox from './MiscCatBox';
 
 const HomeB = () => {
   return (
@@ -16,7 +20,10 @@ const HomeB = () => {
         <Container align="center">
         <Stack direction="column" spacing={4} alignItems="center" justifyContent="center">
             <Dropdown className="fredoka" title="CITY CATS" element={<CityCatBox/>} />
-            <Dropdown title="Dropdown 2" element={<CityCatBox/>}/>
+            <Dropdown className="fredoka" title="SAVANNA CATS" element={<SavannaCatBox/>} />
+            <Dropdown className="fredoka" title="JUNGLE CATS" element={<CityCatBox/>} />
+            <Dropdown className="fredoka" title="MOUNTAIN CATS" element={<CityCatBox/>} />
+            <Dropdown className="fredoka" title="FOREST CATS" element={<CityCatBox/>} />
         </Stack>
         </Container>
     </Box>
