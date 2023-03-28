@@ -11,6 +11,32 @@ import Container from '@mui/material/Container';
 import Dropdown from '../Dropdown';
 import Button from '@mui/material/Button';
 
+import map from '../assets/map.png';
+
+import forest from '../assets/forest.png';
+import mountain from '../assets/mountain.png';
+import savanna from '../assets/savanna.png';
+import city from '../assets/city.png';
+import jungle from '../assets/jungle.png';
+
+/*
+            <div className='map_splash'>
+                <div className='map'>
+                    <img src={map} alt="map" />
+                </div>
+            </div>
+
+
+            <Container align="center" mt={50}>
+            <Stack direction="row" spacing={4} justifyContent="center">
+                <Button variant="contained" onClick={handleHouseClick}>House/City</Button>
+                <Button variant="contained" onClick={handleSavClick}>Savanna</Button>
+                <Button variant="contained" onClick={handleJungleClick}>Jungle</Button>
+                <Button variant="contained" onClick={handleMountainClick}>Mountain</Button>
+                <Button variant="contained" onClick={handleMiscClick}>Forest</Button>
+            </Stack>
+            </Container>
+*/
 
 //function to render the city biome page
 function setToCity(){
@@ -55,23 +81,26 @@ const HomeA = () => {
             </h2>
 
             <h4 align='center'>Click a biome to explore the cats that live there!</h4>
-            <div className='map_splash'>
-                <div className='map'>
-                    <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/57267519/original/c29150cf2ec22629122e72ed8a02087a996ea2e3/draw-your-fantasy-map.png" classname="map" alt="map" />
+            
+            <div class="container">
+                <div class="Mountain">
+                    <img src={mountain} onClick={handleMountainClick} alt="Mountain" />
                 </div>
-                <div className='mountains'>
-                    <img src="https://i.pinimg.com/originals/6a/53/94/6a5394b1e9ae8952026ceb38dc9d87f5.png" classname="mountains" alt="mountain" mb={1}/>
+                <div class="City">
+                    <img src={city} onClick={handleHouseClick} alt="City" />
+                </div>
+                <div class="Savanna">
+                    <img src={savanna} onClick={handleSavClick} alt="Savanna" />
+                </div>
+                <div class="Forest">
+                    <img src={forest} onClick={handleMiscClick} alt="Forest" />
+                </div>
+                <div class="Jungle">
+                    <img src={jungle} onClick={handleJungleClick} alt="Jungle" />
                 </div>
             </div>
-            <Container align="center" mt={50}>
-            <Stack direction="column" spacing={4} justifyContent="center">
-                <Button variant="contained" onClick={handleHouseClick}>House/City</Button>
-                <Button variant="contained" onClick={handleSavClick}>Savanna</Button>
-                <Button variant="contained" onClick={handleJungleClick}>Jungle</Button>
-                <Button variant="contained" onClick={handleMountainClick}>Mountain</Button>
-                <Button variant="contained" onClick={handleMiscClick}>Misc</Button>
-            </Stack>
-            </Container>
+
+            
         </Box>
         </>
     );

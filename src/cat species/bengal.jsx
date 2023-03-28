@@ -35,7 +35,8 @@ const bengal = () => {
                     <h4>Coat: Short, Soft, and Silky</h4>
                     <h4>Colors: Brown, Black, and White</h4>
                     <h4>Pattern: Spotted, Marbled, and Rosetted</h4>
-                    
+                    <h4>Other: Bengal cats are known for their high energy and intelligence. They are also known for their love of water. They are very playful and love to play fetch.  
+                    </h4>
                     
                 </div>
                 
