@@ -9,6 +9,7 @@ import './biome.css';
 import americanshorthair from '../assets/americanshorthair.jpg';
 import lion from '../assets/catpics/Lion/Lion3.png';
 import cheetah from '../assets/catpics/Cheetah/Cheetah2.png';
+import serval from '../assets/catpics/serval.png';
 
 
 import HeaderWithMap from '../HeaderWithMap';
@@ -56,9 +57,9 @@ const SavannaBiome = () => {
                             <div className='cat_pic_container'>
                                 <img src={cheetah} onClick={setToCheetah} alt="Cheetah" />
                             </div>
-                            <h3>Cheetah</h3>
+                            <h3 mb={5}>Cheetah</h3>
                         </div>
-
+                    
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
                                 <img src={americanshorthair} alt="American Shorthair" />
