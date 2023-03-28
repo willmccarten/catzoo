@@ -21,9 +21,9 @@ const HomeB = () => {
         <Stack direction="column" spacing={4} alignItems="center" justifyContent="center">
             <Dropdown className="fredoka" title="CITY CATS" element={<CityCatBox/>} />
             <Dropdown className="fredoka" title="SAVANNA CATS" element={<SavannaCatBox/>} />
-            <Dropdown className="fredoka" title="JUNGLE CATS" element={<CityCatBox/>} />
-            <Dropdown className="fredoka" title="MOUNTAIN CATS" element={<CityCatBox/>} />
-            <Dropdown className="fredoka" title="FOREST CATS" element={<CityCatBox/>} />
+            <Dropdown className="fredoka" title="JUNGLE CATS" element={<JungleCatBox/>} />
+            <Dropdown className="fredoka" title="MOUNTAIN CATS" element={<MountainCatBox/>} />
+            <Dropdown className="fredoka" title="FOREST CATS" element={<MiscCatBox/>} />
         </Stack>
         </Container>
     </Box>
