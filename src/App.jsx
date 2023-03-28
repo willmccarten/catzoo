@@ -14,6 +14,8 @@ import JungleBiome from './applicationA/JungleBiome';
 import MountainBiome from './applicationA/MountainBiome';
 import MiscBiome from './applicationA/MiscBiome';
 import ScottishFold from './cat species/scottishFold';
+import AmericanShorthair from './cat species/americanShorthair';
+import Bengal from './cat species/bengal';
 
 
 //function to render the App A's home page
@@ -51,6 +53,8 @@ function App() {
           <Route path="/mountain-cats" element={<MountainBiome />} />
           <Route path="/misc-cats" element={<MiscBiome />} />
           <Route path="/city-cats/scottish-fold" element={<ScottishFold />}/>
+          <Route path="/city-cats/bengal" element={<Bengal />} />
+          <Route path="/city-cats/american-shorthair" element={<AmericanShorthair/>} />
         </Routes>
       </main>
     </Router>
