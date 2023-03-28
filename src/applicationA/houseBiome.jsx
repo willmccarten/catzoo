@@ -87,29 +87,6 @@ const HouseBiome = () => {
                             <h3 mb={5}>American Shorthair</h3>
                         </div>
                     </Stack>
-
-                    <Stack direction="row">
-                        <div className='cat_species'>
-                            <div className='cat_pic_container'>
-                                <img src={scottishfold} onClick={setToScottishFold} alt="Scottish Fold" />
-                            </div>
-                            <h3>Scottish Fold</h3>
-                        </div>
-
-                        <div className='cat_species'>
-                            <div className='cat_pic_container'>
-                                <img src={bengal} alt="Scottish Fold" />
-                            </div>
-                            <h3>Bengal Cat</h3>
-                        </div>
-
-                        <div className='cat_species'>
-                            <div className='cat_pic_container'>
-                                <img src={americanshorthair} alt="American Shorthair" />
-                            </div>
-                            <h3 mb={5}>American Shorthair</h3>
-                        </div>
-                    </Stack>
                 </Stack>
             </div>
         </div>
