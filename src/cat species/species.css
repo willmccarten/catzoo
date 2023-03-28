@@ -1,5 +1,5 @@
 .species_splash {
-    background-color: tan;
+    background-color: rgba(255, 193, 112, 0.61);
     height: 100vh;
     padding: 10px 60px 60px 60px;
 }
@@ -28,6 +28,7 @@
   
   .cat_info h1 {
     text-align: center;
+    font-size: 80px;
   }
   
   .cat_info h4 {
