@@ -47,6 +47,7 @@
     width: calc(33.33% - 20px);
     border-radius: 10px;
     overflow: hidden;
+    padding: 2rem;
   }
   
  /* styles for the cat_pic_container div */
@@ -80,6 +81,6 @@
   .cat_species h3 {
     margin: 10px 0 0;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   

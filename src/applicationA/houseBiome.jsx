@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from '../App.jsx';
 import HomeA from './HomeA.jsx';
 import { useNavigate } from 'react-router-dom';
-import ScottishFold from '../cat species/scottishFold.jsx';
 import './biome.css';
 import bengal from '../assets/bengal.jpg';
 import scottishfold from '../assets/scottishfold.png';
@@ -13,27 +12,6 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-
-//function to render the home page
-function setToHome(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
-
-
-//function to render the App A's home page
-function setToA(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <HomeA />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
 
 
 const HouseBiome = () => {
