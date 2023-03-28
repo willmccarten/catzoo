@@ -28,7 +28,7 @@ const lion = () => {
 
                 <div classname='cat_info'>
                     <h1>Lion</h1>
-                    <h4>Species: Panthera leo</h4>
+                    <h4>Scientific Species Name: Panthera leo</h4>
                     <h4>Origin: Africa</h4>
                     <h4>Weight: 150-400 lbs</h4>
                     <h4>Height: 3-5 feet</h4>
