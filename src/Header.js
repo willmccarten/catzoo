@@ -39,7 +39,7 @@ function Header(props)  {
           <BsFillHouseFill/>
         </IconButton>
         <Typography variant="h3" justifyContent="center" sx={{flexGrow:1, display:'flex', fontWeight:700}}>
-          CATZOO
+          CatZoo
         </Typography>
       </Toolbar>
     </AppBar>

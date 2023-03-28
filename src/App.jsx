@@ -16,27 +16,8 @@ import MiscBiome from './applicationA/MiscBiome';
 import ScottishFold from './cat species/scottishFold';
 import AmericanShorthair from './cat species/americanShorthair';
 import Bengal from './cat species/bengal';
-
-
-//function to render the App A's home page
-function setToA(){
-  ReactDOM.render(
-    <React.StrictMode>
-      <HomeA />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-}
-
-//function to render the App B's home page
-function setToB(){
-  ReactDOM.render(
-    <React.StrictMode>
-      <HomeB />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-}
+import Lion from './cat species/lion';
+import Cheetah from './cat species/cheetah';
 
 
 function App() {
@@ -55,6 +36,8 @@ function App() {
           <Route path="/city-cats/scottish-fold" element={<ScottishFold />}/>
           <Route path="/city-cats/bengal" element={<Bengal />} />
           <Route path="/city-cats/american-shorthair" element={<AmericanShorthair/>} />
+          <Route path="/savanna-cats/lion" element={<Lion />} />
+          <Route path="/savanna-cats/cheetah" element={<Cheetah />} />
         </Routes>
       </main>
     </Router>

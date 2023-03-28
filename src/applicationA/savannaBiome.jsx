@@ -5,42 +5,29 @@ import HomeA from './HomeA.jsx';
 import { useNavigate } from 'react-router-dom';
 import ScottishFold from '../cat species/scottishFold.jsx';
 import './biome.css';
-import bengal from '../assets/bengal.jpg';
-import scottishfold from '../assets/scottishfold.png';
+
 import americanshorthair from '../assets/americanshorthair.jpg';
+import lion from '../assets/catpics/Lion/Lion3.png';
+import cheetah from '../assets/catpics/Cheetah/Cheetah2.png';
+
+
 import HeaderWithMap from '../HeaderWithMap';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-//function to render the home page
-function setToHome(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
-
-
-//function to render the App A's home page
-function setToA(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <HomeA />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
 
 
 const SavannaBiome = () => {
     const navigate = useNavigate();
 
-    const setToScottishFold = () => {
-        navigate('/city-cats/scottish-fold');
+    const setToLion = () => {
+        navigate('/savanna-cats/lion');
+    }
+
+    const setToCheetah = () => {
+        navigate('/savanna-cats/cheetah');
     }
     
         //function to render the home page
@@ -60,39 +47,16 @@ const SavannaBiome = () => {
                     <Stack direction="row">
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={scottishfold} onClick={setToScottishFold} alt="Scottish Fold" />
+                                <img src={lion} onClick={setToLion} alt="Lion" />
                             </div>
-                            <h3>Scottish Fold</h3>
+                            <h3>Lion</h3>
                         </div>
 
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={bengal} alt="Scottish Fold" />
+                                <img src={cheetah} onClick={setToCheetah} alt="Cheetah" />
                             </div>
-                            <h3>Bengal Cat</h3>
-                        </div>
-
-                        <div className='cat_species'>
-                            <div className='cat_pic_container'>
-                                <img src={americanshorthair} alt="American Shorthair" />
-                            </div>
-                            <h3 mb={5}>American Shorthair</h3>
-                        </div>
-                    </Stack>
-
-                    <Stack direction="row">
-                        <div className='cat_species'>
-                            <div className='cat_pic_container'>
-                                <img src={scottishfold} onClick={setToScottishFold} alt="Scottish Fold" />
-                            </div>
-                            <h3>Scottish Fold</h3>
-                        </div>
-
-                        <div className='cat_species'>
-                            <div className='cat_pic_container'>
-                                <img src={bengal} alt="Scottish Fold" />
-                            </div>
-                            <h3>Bengal Cat</h3>
+                            <h3>Cheetah</h3>
                         </div>
 
                         <div className='cat_species'>

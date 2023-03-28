@@ -32,6 +32,11 @@
     background-color: #f5f5f5;
     border-radius: 10px;
   }
+
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
   
   /* styles for the cat_species div */
   .cat_species {

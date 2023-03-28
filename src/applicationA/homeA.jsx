@@ -51,7 +51,7 @@ const HomeA = () => {
         <Header/>
         <Box sx={{ bgcolor: '#fbf4e2', pt: 1, pb: 6,}} minHeight='calc(69vh)' mt={0}>
             <h2 align='center'>
-                Welcome to Cat Zoo Application A!
+                Welcome to CatZoo Application A!
             </h2>
 
             <h4 align='center'>Click a biome to explore the cats that live there!</h4>
