@@ -10,35 +10,7 @@ import BackButton from './BackButton';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
-//function to render the home page
-function setToHome(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <App />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
 
-//function to render the App A's home page
-function setToA(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <HomeA />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
-
-//function to render the Biome page
-function setToBiome(){
-    ReactDOM.render(
-        <React.StrictMode>
-            <HouseBiome />
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
 
 const scottishFold = () => {
     return (
@@ -46,12 +18,11 @@ const scottishFold = () => {
         <Header/>
        
         <div className='species_splash'>
-            <Box  justifyContent="center" display='flex' mb={'10px'}>
-            </Box>
+            
             <div className='species_cats_splash'>
-
+                
                 <div className='cat_pic'>
-                    <img src={scottishfold} alt="Scottish Fold" />
+                    <img src={scottishfold} alt="Scottish Fold"/>
                 </div>
 
                 <div classname='cat_info'>
