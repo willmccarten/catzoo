@@ -42,6 +42,14 @@ const HouseBiome = () => {
     const setToScottishFold = () => {
         navigate('/city-cats/scottish-fold');
     }
+
+    const setToAmericanShorthair = () => {
+        navigate('/city-cats/american-shorthair');
+    }
+
+    const setToBengal = () => {
+        navigate('/city-cats/bengal');
+    }
     
         //function to render the home page
     const handleHomeClick = () => {
@@ -67,14 +75,14 @@ const HouseBiome = () => {
 
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={bengal} alt="Scottish Fold" />
+                                <img src={bengal} onClick={setToBengal} alt="Bengal" />
                             </div>
                             <h3>Bengal Cat</h3>
                         </div>
 
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={americanshorthair} alt="American Shorthair" />
+                                <img src={americanshorthair} onClick={setToAmericanShorthair} alt="American Shorthair" />
                             </div>
                             <h3 mb={5}>American Shorthair</h3>
                         </div>
