@@ -1,28 +1,24 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../applicationA/biome.css';
-import bengal from '../assets/bengal.jpg';
-import scottishfold from '../assets/scottishfold.png';
-import americanshorthair from '../assets/americanshorthair.jpg';
+import lion from '../assets/catpics/Lion/Lion3.png';
+import cheetah from '../assets/catpics/Cheetah/Cheetah2.png';
+import serval from '../assets/serval.png';
 import HeaderWithMap from '../HeaderWithMap';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-const CityCatBox = () => {
+const SavannaCatBox = () => {
     const navigate = useNavigate();
 
-    const setToScottishFold = () => {
-        navigate('/city-cats/scottish-fold');
+    const setToLion = () => {
+        navigate('/savanna-cats/lion');
     }
 
-    const setToBengal = () => {
-        navigate('/city-cats/bengal');
-    }
-
-    const setToAmericanShorthair = () => {
-        navigate('/city-cats/american-shorthair');
+    const setToCheetah = () => {
+        navigate('/savanna-cats/cheetah');
     }
     
     return (
@@ -32,23 +28,23 @@ const CityCatBox = () => {
                     <Stack direction="row">
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={scottishfold} onClick={setToScottishFold} alt="Scottish Fold" />
+                                <img src={lion} onClick={setToLion} alt="Lion" />
                             </div>
-                            <h3>Scottish Fold</h3>
+                            <h3>Lion</h3>
                         </div>
 
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={bengal} onClick={setToBengal} alt="Scottish Fold" />
+                                <img src={cheetah} onClick={setToCheetah} alt="Cheetah" />
                             </div>
-                            <h3>Bengal Cat</h3>
+                            <h3>Cheetah</h3>
                         </div>
 
                         <div className='cat_species'>
                             <div className='cat_pic_container'>
-                                <img src={americanshorthair} onClick={setToAmericanShorthair} alt="American Shorthair" />
+                                <img src={serval} alt="Serval" />
                             </div>
-                            <h3 mb={5}>American Shorthair</h3>
+                            <h3 mb={5}>Serval</h3>
                         </div>
                     </Stack>
 
@@ -59,4 +55,4 @@ const CityCatBox = () => {
     );
 }
 
-export default CityCatBox;
+export default SavannaCatBox;
