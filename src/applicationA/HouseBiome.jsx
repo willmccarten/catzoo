@@ -4,9 +4,11 @@ import App from '../App.jsx';
 import HomeA from './HomeA.jsx';
 import { useNavigate } from 'react-router-dom';
 import './biome.css';
+
 import bengal from '../assets/bengal.jpg';
 import scottishfold from '../assets/scottishfold.png';
 import americanshorthair from '../assets/americanshorthair.jpg';
+
 import HeaderWithMap from '../HeaderWithMap';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
